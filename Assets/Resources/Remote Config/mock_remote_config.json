@@ -1,0 +1,7 @@
+{
+  "snakeHeadSprite": "SnakeHead",
+  "snakeBodySprite": "SnakeBody",
+  "foodSprite": "FoodApple",
+  "gridMoveTimerMax": 0.2,
+  "startingDirection": "Right"
+}
