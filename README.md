@@ -5,7 +5,7 @@ REFORM REPORT – by Bruno Leote
 
 Summary
 -------
-This document outlines the improvements made to the original Unity Snake game project from Code Monkey. This was done to illustrate my current code style. 
+This document outlines the improvements made to the original Unity Snake game project from CodeMonkey. This was done to illustrate my current code style. 
 
 The main goal was to improve architecture, maintainability, memory usage, testability, and prepare the game for future scalability and LiveOps support.
 
@@ -18,7 +18,7 @@ Tasks Overview
 - Replaced all `transform.Find` calls with serialized references to reduce lookup costs.
 - Reduced scene loader complexity by merging the previous 2-class system into a single persistent loader.
 - Removed unnecessary GameObjects and Cameras from the scene hierarchy.
-NOTE: pooling was considered for spawning apples and making the snake body growth, but due to the low frequency of these events, polling would just add an unnecessary complexity to the game logic.
+NOTE: pooling was considered for spawning apples and making the snake's body grow, but due to the low frequency of these events, pooling would just add unnecessary complexity to the game logic.
 
 2. TESTABILITY & UNIT TESTS
 ----------------------------
@@ -44,7 +44,7 @@ NOTE: pooling was considered for spawning apples and making the snake body growt
   - `GameAssembly` for core logic
   - `UtilsAssembly` for helper components
   - `TestsAssembly` for unit tests
-- Improved class and functions naming, organization, and separation of responsibilities.
+- Improved classes and functions naming, organization, and separation of responsibilities.
 - Improved scene organization, with clearer breakdowns that help readability.
 - Reusable interfaces (e.g., `IGameInput`) introduced to allow for future platform-specific inputs.
 
@@ -52,7 +52,7 @@ NOTE: pooling was considered for spawning apples and making the snake body growt
 --------------------------
 - Separated code into `.asmdef` files:
   - Prevented unnecessary recompilation of unrelated code (e.g., menu logic when editing gameplay).
-- Kept external code (CodeMonkey) isolated to its own assembly.
+- Kept external code (CodeMonkey) isolated to its assembly.
 
 6. MULTIPLATFORM INPUT SUPPORT
 -----------------------------------------
