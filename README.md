@@ -1,15 +1,13 @@
 # Snake-Game-Improved-Structure
-I took a classic Snake game from Code Monkey and refactored the structure to improve maintainability and readability. Also, pre-connected with a Live-Ops structure to allow remote config.
-
 
 REFORM REPORT – by Bruno Leote
 ==============================
 
 Summary
 -------
-This document outlines the improvements made to the original Unity Snake game project, highlighting my professional fit for the **Senior Unity Developer** role at GameHouse.
+This document outlines the improvements made to the original Unity Snake game project from Code Monkey. This was done to illustrate my current code style. 
 
-The main goal was to improve architecture, maintainability, memory usage, testability, and prepare the game for future scalability and LiveOps support — all within the given time box.
+The main goal was to improve architecture, maintainability, memory usage, testability, and prepare the game for future scalability and LiveOps support.
 
 Tasks Overview
 --------------
